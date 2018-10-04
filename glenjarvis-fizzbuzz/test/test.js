@@ -13,12 +13,12 @@ describe("FizzBuzz", function () {
     assert.strictEqual(fizzBuzz.MAX_COUNT, 1000);
   });
 
-  it("should say 1 when given 1", function() {
-    let fizzBuzz = new FizzBuzz();
-    assert.strictEqual(fizzBuzz.say(1), 1);
-  });
-
   describe("#say", function () {
+    it("should say 1 when given 1", function() {
+      let fizzBuzz = new FizzBuzz();
+      assert.strictEqual(fizzBuzz.say(1), 1);
+    });
+
     it("should say fizz when given 3", function() {
       let fizzBuzz = new FizzBuzz();
       assert.strictEqual(fizzBuzz.say(3), "fizz");
