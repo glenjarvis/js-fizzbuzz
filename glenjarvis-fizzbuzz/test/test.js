@@ -18,9 +18,11 @@ describe("FizzBuzz", function () {
     assert.strictEqual(fizzBuzz.say(1), 1);
   });
 
-  it("should say fizz when given 3", function() {
-    let fizzBuzz = new FizzBuzz();
-    assert.strictEqual(fizzBuzz.say(3), "fizz");
+  describe("#say", function () {
+    it("should say fizz when given 3", function() {
+      let fizzBuzz = new FizzBuzz();
+      assert.strictEqual(fizzBuzz.say(3), "fizz");
+    });
   });
 
   describe("#divisable_by", function () {
