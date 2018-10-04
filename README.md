@@ -5,3 +5,7 @@ In an effort to brush up on my JavaScript, I read Michael Hartl's [Learn Enough 
 
 This is the canonical and very simple exercise for basic programming.
 
+
+Execution
+---------
+Sample execution: `node fizz_buzz.js`
