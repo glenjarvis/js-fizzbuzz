@@ -1,0 +1,25 @@
+{
+  "name": "glenjarvis-fizzbuzz",
+  "version": "0.1.0",
+  "description": "A very simple JS implementation of FizzBuzz",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glenjarvis/js_fizzbuzz.git"
+  },
+  "keywords": [
+    "fizz",
+    "buzz",
+    "fizzbuzz",
+    "javascript"
+  ],
+  "author": "Glen Jarvis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glenjarvis/js_fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/glenjarvis/js_fizzbuzz#README.md"
+}
