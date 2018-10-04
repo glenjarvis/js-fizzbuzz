@@ -19,6 +19,8 @@ function FizzBuzz(max_count) {
   this.say = function say(number) {
     if (this.divisable_by(number, 3)) {
       return "fizz";
+    } else if (this.divisable_by(number, 5)) {
+      return "buzz";
     } else {
       return number;
     }

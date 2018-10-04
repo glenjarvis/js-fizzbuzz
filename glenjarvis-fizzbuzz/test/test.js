@@ -23,6 +23,11 @@ describe("FizzBuzz", function () {
       let fizzBuzz = new FizzBuzz();
       assert.strictEqual(fizzBuzz.say(3), "fizz");
     });
+
+    it("should say buzz when given 5", function() {
+      let fizzBuzz = new FizzBuzz();
+      assert.strictEqual(fizzBuzz.say(5), "buzz");
+    });
   });
 
   describe("#divisable_by", function () {
