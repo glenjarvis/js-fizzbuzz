@@ -12,7 +12,8 @@ describe("FizzBuzz", function () {
     assert.strictEqual(fizzBuzz.MAX_COUNT, 1000);
   });
 
-  //it("should say 1 when given 1", function() {
-  //  assert.strictlyEqual(fizzBuzz.say(1), 1);
-  //});
+  it("should say 1 when given 1", function() {
+    let fizzBuzz = new FizzBuzz();
+    assert.strictEqual(fizzBuzz.say(1), 1);
+  });
 });
