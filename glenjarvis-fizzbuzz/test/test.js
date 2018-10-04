@@ -7,6 +7,11 @@ describe("FizzBuzz", function () {
     assert.strictEqual(fizzBuzz.MAX_COUNT, 10);
   });
 
+  it("should have a default value of 1000 if no max given", function() {
+    let fizzBuzz = new FizzBuzz();
+    assert.strictEqual(fizzBuzz.MAX_COUNT, 1000);
+  });
+
   //it("should say 1 when given 1", function() {
   //  assert.strictlyEqual(fizzBuzz.say(1), 1);
   //});
