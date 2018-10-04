@@ -8,11 +8,24 @@ function FizzBuzz(max_count) {
     this.MAX_COUNT = 1000;
   }
 
-  this.say = function say() {
-    return 1;
+  this.divisable_by = function divisable_by(dividend, divisor) {
+    if  (divisor) {
+      return !(dividend % divisor)
+    } else {
+      return false
+    }
+  }
+
+  this.say = function say(number) {
+    if (this.divisable_by(number, 3)) {
+      return "fizz";
+    } else {
+      return number;
+    }
   }
 
   //for (let i=0; i<=MAX_COUNT; i++) {
   //  console.log(i);
   //}
 }
+
