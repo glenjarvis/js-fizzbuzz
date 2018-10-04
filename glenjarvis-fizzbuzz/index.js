@@ -16,8 +16,14 @@ function FizzBuzz(max_count) {
     }
   }
 
+  this.divisable_by_both = function divisable_by_both(dividend) {
+    return this.divisable_by(dividend, 3) && this.divisable_by(dividend, 5)
+  };
+
   this.say = function say(number) {
-    if (this.divisable_by(number, 3)) {
+    if (this.divisable_by_both(number)) {
+      return "fizzbuzz";
+    } else if (this.divisable_by(number, 3)) {
       return "fizz";
     } else if (this.divisable_by(number, 5)) {
       return "buzz";
