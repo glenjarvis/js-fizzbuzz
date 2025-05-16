@@ -1,0 +1,12 @@
+{
+  "name": "js-fizzbuzz",
+  "version": "1.0.0",
+  "description": "A simple FizzBuzz implementation in JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Glen Jarvis",
+  "license": "MIT"
+}
+
