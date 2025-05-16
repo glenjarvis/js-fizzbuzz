@@ -5,7 +5,6 @@ WORKDIR /workspace
 
 COPY . .
 
-RUN if [ -f package.json ]; then npm install; fi
-
 USER node
 
+RUN if [ -f package.json ]; then npm install; fi
