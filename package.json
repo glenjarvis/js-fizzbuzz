@@ -4,9 +4,13 @@
   "description": "A simple FizzBuzz implementation in JavaScript.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha glenjarvis-fizzbuzz/test/**/*.js"
   },
   "author": "Glen Jarvis",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
 }
 
