@@ -31,10 +31,6 @@ function FizzBuzz(max_count) {
       return number;
     }
   }
-
-  //for (let i=0; i<=MAX_COUNT; i++) {
-  //  console.log(i);
-  //}
 }
 
 function demo(demo_count) {
