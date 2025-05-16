@@ -6,21 +6,18 @@ The original version was inspired by Michael Hartl's [Learn Enough JavaScript to
 
 # Purpose
 
-This project is part of my personal journey as I prepare to apply to CodeSmith. It represents my current JavaScript proficiency — including areas where I know my style still leans on habits from other languages.
+This project is part of my personal journey as I prepare to apply to CodeSmith. It represents my current JavaScript proficiency (beginner level) — including areas where I know my style still leans on habits from other languages.
 
 Where possible, I’ve adopted common JavaScript idioms, but you’ll also notice places where I’ve used more verbose if/else logic or procedural constructs. I’ve left these as-is intentionally to reflect an honest snapshot of where I am today — not a polished "interview artifact," but real working code with structure, tests, and automation.
 
 # Execution
 
-Sample execution: `npm start`
-Test: `npm test`
-
-## Execution
-
 - Run the program:
   ```bash
-  npm start```
+  npm start
+  ```
 
 - Run tests:
   ```bash
-  npm test```
+  npm test
+  ```
