@@ -35,20 +35,20 @@ describe("FizzBuzz", function () {
     });
   });
 
-  describe("#divisable_by", function () {
-    it("should always return false when asked to be divisable by 0", function() {
+  describe("#divisible_by", function () {
+    it("should always return false when asked to be divisible by 0", function() {
       let fizzBuzz = new FizzBuzz();
-      assert(!fizzBuzz.divisable_by(3, 0));
+      assert(!fizzBuzz.divisible_by(3, 0));
     });
 
-    it("should know that 9 is divisable by 3", function() {
+    it("should know that 9 is divisible by 3", function() {
       let fizzBuzz = new FizzBuzz();
-      assert(fizzBuzz.divisable_by(9, 3));
+      assert(fizzBuzz.divisible_by(9, 3));
     });
 
-    it("should know that 9 is not divisable by 4", function() {
+    it("should know that 9 is not divisible by 4", function() {
       let fizzBuzz = new FizzBuzz();
-      assert(!fizzBuzz.divisable_by(9, 4));
+      assert(!fizzBuzz.divisible_by(9, 4));
     });
   });
 

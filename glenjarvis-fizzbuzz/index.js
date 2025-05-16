@@ -8,7 +8,7 @@ function FizzBuzz(max_count) {
     this.MAX_COUNT = 1000;
   }
 
-  this.divisable_by = function divisable_by(dividend, divisor) {
+  this.divisible_by = function divisible_by(dividend, divisor) {
     if  (divisor) {
       return !(dividend % divisor)
     } else {
@@ -16,24 +16,31 @@ function FizzBuzz(max_count) {
     }
   }
 
-  this.divisable_by_both = function divisable_by_both(dividend) {
-    return this.divisable_by(dividend, 3) && this.divisable_by(dividend, 5)
+  this.divisible_by_both = function divisible_by_both(dividend) {
+    return this.divisible_by(dividend, 3) && this.divisible_by(dividend, 5)
   };
 
   this.say = function say(number) {
-    if (this.divisable_by_both(number)) {
+    if (this.divisible_by_both(number)) {
       return "fizzbuzz";
-    } else if (this.divisable_by(number, 3)) {
+    } else if (this.divisible_by(number, 3)) {
       return "fizz";
-    } else if (this.divisable_by(number, 5)) {
+    } else if (this.divisible_by(number, 5)) {
       return "buzz";
     } else {
       return number;
     }
   }
-
-  //for (let i=0; i<=MAX_COUNT; i++) {
-  //  console.log(i);
-  //}
 }
 
+function demo(demo_count) {
+  const fizzBuzz = new FizzBuzz(demo_count);
+  for (let i = 1; i <= fizzBuzz.MAX_COUNT; i++) {
+    console.log(fizzBuzz.say(i));
+  }
+}
+
+// Only run if this script is run directly (not when imported)
+if (require.main === module) {
+  demo(20);
+}
