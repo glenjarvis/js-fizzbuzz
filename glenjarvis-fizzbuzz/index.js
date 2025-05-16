@@ -37,3 +37,14 @@ function FizzBuzz(max_count) {
   //}
 }
 
+function demo(demo_count) {
+  const fizzBuzz = new FizzBuzz(demo_count);
+  for (let i = 1; i <= fizzBuzz.MAX_COUNT; i++) {
+    console.log(fizzBuzz.say(i));
+  }
+}
+
+// Only run if this script is run directly (not when imported)
+if (require.main === module) {
+  demo(20);
+}
